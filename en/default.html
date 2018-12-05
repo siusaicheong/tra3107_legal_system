@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Legal System</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link href="css/default.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <nav>
+          <!--You need to add the class "external" to make your links to external web pages work-->
+          <a href="index.html" class="external">Main page</a>
+          <a href="#index">Topics</a>
+          <!--Framework7 allows you to specify internal links (e.g., #overview) without using the long path (e.g., en/default.html#overview)-->
+          <a href="#overview">Overview</a>
+          <a href="#law">Law in HK</a>
+          <a href="#judiciary">The Judiciary</a>
+          <a href="#doj">Department of Justice</a>
+          <a href="#lawreform">Law Reform Commission</a>
+          <a href="#legalprofession">The Legal Profession</a>
+          <a href="#links">Useful Links</a>
+          <a href="#database">Legal Database</a>
+          <a href="zh/default.html" class="external">中文</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <!-- Navbar inner for Index page-->
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Legal System</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Overview page-->
+          <div data-page="overview" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Overview</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Law page-->
+          <div data-page="law" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Law in HK</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Judiciary page-->
+          <div data-page="judiciary" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">The Judiciary</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for DOJ page-->
+          <div data-page="doj" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Department of Justice</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Law Reform page-->
+          <div data-page="lawreform" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Legal Reform Commission</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Legal Profession page-->
+          <div data-page="legalprofession" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">The Legal Profession</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Links page-->
+          <div data-page="links" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Useful Links</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Database page-->
+          <div data-page="database" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">Legal Database</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">Topics</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="#overview" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Overview</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#law" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Law in HK</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#judiciary" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Judiciary</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#doj" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Department of Justice</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#lawreform" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Legal Reform Comission</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#legalprofession" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">The Legal Profession</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#links" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Useful Links</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#database" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Legal Database</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="index.html" class="item-link external">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Main Page 主頁</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--Overview Page-->
+          <div data-page="overview" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the "Overview" section of Box 1 to complete this element-->
+                <p>The legal system of the Hong Kong Special Administrative Region (HKSAR) is based on the rule of law and the independence of the judiciary. The constitutional framework for the legal system is provided by the Basic Law sanctioned by the National People’s Congress of the PRC. Under the principle of ‘one country, two systems’, the HKSAR legal system, which is different from that of Mainland China, is based on the common law, supplemented by written law. All legislation in force in the HKSAR is accessible on the internet at www.legislation.gov.hk.</p>
+                <img src="images/legal.png" alt="Legal System"><br>
+              </div>
+            </div>
+          </div>
+
+          <!--Law Page-->
+          <div data-page="law" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the "Law in HK" section of Box 1 to complete this element-->
+                <p>The laws in force in the HKSAR include: </p>
+                <ol>
+                  <li>the Basic Law;</li>
+                  <li>national laws listed in Annex III to the Basic Law as applied to the HKSAR;</li>
+                  <li>the laws, including the common law and the rules of equity, in force before July 1, 1997, except for any that contravenes the Basic Law or amended by the legislature of the HKSAR; and</li>
+                  <li>laws enacted by the legislature of the HKSAR.</li>
+                </ol>
+                <p>National laws relating to defence, foreign affairs and other matters outside the limits of the autonomy of the HKSAR may be listed in Annex III to the Basic Law for application in the HKSAR by way of promulgation or legislation by the HKSAR. Currently, 12 national laws are included in Annex III to the Basic Law. </p>
+              </div>
+            </div>
+          </div>
+
+          <!--Judiciary Page-->
+          <div data-page="judiciary" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the "The Judiciary" section of Box 1 to complete this element-->
+                <p>It is fundamental to Hong Kong’s legal system that members of the judiciary are independent of the executive and legislative branches of government. </p>
+                <p>The courts of justice in Hong Kong comprise the Court of Final Appeal, the High Court (which includes the Court of Appeal and the Court of First Instance), the District Court (which includes the Family Court), the Lands Tribunal, the Magistrates’ Courts (which include the Juvenile Court), the Coroner’s Court, the Labour Tribunal, the Small Claims Tribunal and the Obscene Articles Tribunal.</p>
+                <!--Image: images/law.jpg-->
+                <img src="images/law.jpg" alt="Law"><br>
+              </div>
+            </div>
+          </div>
+
+          <!--DOJ Page-->
+          <div data-page="doj" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the "Department of Justice" section of Box 1 to complete this element-->
+                <p>There are five professional divisions in the Department responsible for legal work. The Department is headed by the Secretary for Justice, who is a member of the Executive Council and is the Government’s chief legal adviser. The Secretary has ultimate responsibility for the prosecution of all offences in the HKSAR.</p>
+                <p>The Legal Policy Division, as well as the Secretary for Justice’s Office, provides professional support in the execution of the Secretary for Justice’s duties and provides input on all legal policy issues being considered by the Government. The division advises on issues relating to the administration of justice, the legal system, the legal profession, human rights, the Basic Law, constitutional development and electoral affairs and the law of Mainland China. The Law Reform Commission Secretariat, which provides research and secretarial support to the Commission, is within the division.</p>
+                <p>The Civil Division provides legal advice to the Government on civil law, drafts commercial contracts and franchises and conducts civil litigation, arbitration and mediation on behalf of the Government.</p>
+                <p>The Law Drafting Division drafts, in Chinese and English, all legislation proposed by the Administration and provides professional support to policy bureaux throughout the legislative process. It is also responsible for the compilation of the Laws of Hong Kong and maintaining a legislation database which is available on the Internet. As at Oct 2014, it is developing a new legislation database with legal status.</p>
+                <p>One of the most important functions of the Prosecutions Division is to make prosecutorial decisions as to whether to prosecute, and if so what charges to lay and before which courts. Its counsel provides legal advice to law enforcement agencies on all prosecution related matters, conduct trials and most appeals (up to and including those before the Court of Final Appeal).</p>
+                <p>The International Law Division advises the Government on issues relating to public international law. Lawyers in this division also participate in the negotiation of agreements with other jurisdictions and handle requests to and from the HKSAR for international legal co-operation.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Legal Reform Page-->
+          <div data-page="lawreform" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the "Legal Reform Commission" section of Box 1 to complete this element-->
+                <p>The Law Reform Commission considers and reports on such topics as may be referred to it by the Secretary for Justice or the Chief Justice of the Court of Final Appeal of the HKSAR. Its membership includes academics, practising lawyers and prominent community members.</p>
+                <p>The Commission has published reports covering subjects as diverse as commercial arbitration, data protection, divorce, sale of goods and supply of services, insolvency, fraud, statutory interpretation, enduring powers of attorney, double jeopardy, class actions and adverse possession. The recommendations in many of its reports have been implemented, either in whole or in part. It is currently considering references on sexual offences, causing or allowing the death of a child, archives law, access to information, third party funding for arbitration and periodical payments for future pecuniary loss in personal injury cases.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Legal Profession Page-->
+          <div data-page="legalprofession" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the "The Legal Profession" section of Box 1 to complete this element-->
+                <p>As at September 2015, the HKSAR had 1 322 practising barristers, 8 482 practising solicitors and 854 local law firms, plus 78 foreign law firms, 1 253 registered foreign lawyers and 33 registered associations between foreign law firms and local law firms.</p>
+                <!--Image: images/lawyer.jpg-->
+                <img src="images/lawyer.jpg" alt="Lawyer"><br>
+              </div>
+            </div>
+          </div>
+
+          <!--Link Page-->
+          <div data-page="links" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the "Useful Links" section of Box 1 to complete this element-->
+                <p>Visit the following websites for more information about the legal system of Hong Kong:</p>
+                <ol>
+                  <li>Judiciary <br>(<a href="http://www.judiciary.gov.hk/en/index/" class="external">http://www.judiciary.gov.hk/en/index/</a>)</li>
+                  <li>Department of Justice <br>(<a href="http://www.doj.gov.hk/eng/index.html" class="external">http://www.doj.gov.hk/eng/index.html</a>)</li>
+                  <li>Bilingual Laws Information System <br>(<a href="http://www.legislation.gov.hk/blis/eng/index.html" class="external">http://www.legislation.gov.hk/blis/eng/index.html</a>)</li>
+                </ol>
+                <!--Image: images/internet.jpg-->
+                <img src="images/internet.jpg" alt="The internet"><br>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database Page-->
+          <div data-page="database" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title">Search useful bilingual legal terms here</div>
+    
+              <div class="list-block">
+                <ul>
+                  <li class="align-top">
+                    <div class="item-content">
+                      <div class="item-input">
+                        <textarea id="input"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50">
+                    <input id="cancel" type="button" value="Clear" class="button button-small color-red">
+                  </div>
+                  <div class="col-50">
+                    <input id="go" type="submit" value="Go" class="button button-small color-green">
+                  </div>
+                </div>
+              </div>
+              <div id="result" class="result"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var db = [
+        ["English","Chinese"],
+        ["the Court of Final Appeal","終審法院"],
+        ["the High Court","高等法院"],
+        ["the Court of Appeal","上訴法庭"],
+        ["the Court of First Instance","原訟法庭"],
+        ["the District Court","區域法院"],
+        ["the Family Court","家事法庭"],
+        ["the Competition Tribunal","競爭事務審裁處"],
+        ["the Lands Tribunal","土地審裁處"],
+        ["the Magistrates’ Courts","裁判法院"],
+        ["the Juvenile Court","少年法庭"],
+        ["the Coroner’s Court","死因裁判法庭"],
+        ["the Labour Tribunal","勞資審裁處"],
+        ["the Small Claims Tribunal","小額錢債審裁處"],
+        ["the Obscene Articles Tribunal","淫褻物品審裁處"],
+        ["Department of Justice","律政司"],
+        ["Law Reform Commission","法律改革委員會"],
+        ["Legal Aid Department","法律援助署"],
+        ["civil cases","民事訴訟"],
+        ["criminal cases","刑事訴訟"],
+        ["Supplementary Legal Aid Scheme","法律援助輔助計劃"],
+        ["the Duty Lawyer Service","當值律師服務"]
+      ];
+      document.getElementById("go").addEventListener("click", function(){
+        var input = document.getElementById("input").value;
+        document.getElementById("result").innerHTML = fsearchHighlight(input, db);
+      });
+      document.getElementById("cancel").addEventListener("click", function(){
+        document.getElementById("input").value = "";
+        document.getElementById("result").innerHTML = "";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>法律制度</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link href="css/default.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <nav>
+          <!--You need to add the class "external" to make your links to external web pages work-->
+          <a href="index.html" class="external">主頁</a>
+          <a href="#index">目錄</a>
+          <!--Framework7 allows you to specify internal links (e.g., #overview) without using the long path (e.g., zh/default.html#overview)-->
+          <a href="#overview">概覽</a>
+          <a href="#law">香港法律</a>
+          <a href="#judiciary">司法機構</a>
+          <a href="#doj">律政司</a>
+          <a href="#lawreform">法律改革委員會</a>
+          <a href="#legalprofession">法律專業</a>
+          <a href="#links">有用網頁</a>
+          <a href="#database">法律資料庫</a>
+          <a href="en/default.html" class="external">English</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <!-- Navbar inner for Index page-->
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">法律制度</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Overview page-->
+          <div data-page="overview" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">概覽</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Law page-->
+          <div data-page="law" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">香港法律</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Judiciary page-->
+          <div data-page="judiciary" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">司法機構</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for DOJ page-->
+          <div data-page="doj" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">律政司</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Law Reform page-->
+          <div data-page="lawreform" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">法律改革委員會</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Legal Profession page-->
+          <div data-page="legalprofession" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">法律專業</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Links page-->
+          <div data-page="links" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">有用網頁</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for Database page-->
+          <div data-page="database" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>上一頁</span></a></div>
+            <div class="center sliding">法律資料庫</div>
+            <div class="right sliding">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">目錄</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="#overview" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">概覽</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#law" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">香港法律</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#judiciary" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">司法機構</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#doj" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">律政司</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#lawreform" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">法律改革委員會</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#legalprofession" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">法律專業</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#links" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">有用網頁</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#database" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">法律資料庫</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="index.html" class="item-link external">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Main Page 主頁</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--Overview Page-->
+          <div data-page="overview" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the section "概覽" (Box 2) to complete this element-->
+                <p>香港特別行政區（香港特區）的法律制度牢牢建基於法治及司法獨立的精神。經中華人民共和國全國人民代表大會通過的《基本法》為香港特區的法律制度訂下憲制框架。根據「一國兩制」的原則，香港特區的法律制度以普通法為依歸，並由成文法作補充，與中國內地的制度截然不同。香港現行的法例可在互聯網上閱覽（網址：www.legislation.gov.hk）。</p>
+                <img src="images/legal.png" alt="法律制度"><br>
+              </div>
+            </div>
+          </div>
+
+          <!--Law Page-->
+          <div data-page="law" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the section "香港法律" (Box 2) to complete this element-->
+                <p>香港特區目前實施的法律包括：</p>
+                <ol>
+                  <li>《基本法》；</li>
+                  <li>《基本法》附件三載列的在香港特區實施的全國性法律；</li>
+                  <li>1997年7月1日之前的原有法律，包括普通法及衡平法，違反《基本法》或經香港特區立法機關修訂的除外；</li>
+                  <li>香港特區立法機關制定的法律。</li>
+                </ol>
+                <p>與防務、外交及其他在香港特區自治範圍以外的事務有關的全國性法律，可以列於《基本法》附件三，由香港特區公布或自行立法，在香港施行。目前有12條全國性法律列於《基本法》附件三。</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Judiciary Page-->
+          <div data-page="judiciary" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the section "司法機構" (Box 2) to complete this element-->
+                <p>香港的法律制度是建立於司法獨立的基礎上，司法人員在執行司法職責時完全不受政府的行政和立法機關影響。 
+            </p>
+                <p>香港的法院是由終審法院、高等法院（分為上訴法庭及原訟法庭）、區域法院（包括家事法庭）、土地審裁處、裁判法院（包括少年法庭）、死因裁判法庭、勞資審裁處、小額錢債審裁處和淫褻物品審裁處組成。</p>
+                <!--Image: images/law.jpg-->
+                <img src="images/law.jpg" alt="法律"><br>
+              </div>
+            </div>
+          </div>
+
+          <!--DOJ Page-->
+          <div data-page="doj" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the section "律政司" (Box 2) to complete this element-->
+                <p>律政司由五個專責法律工作的科別組成。主管律政司的律政司司長是行政會議的成員，亦是香港特區政府的首席法律顧問，並負有對本港所有罪案進行檢控的最終責任。</p>
+                <p>法律政策科及律政司司長辦公室提供各項專業服務，以支援律政司司長執行職責，並就政府正在考慮的所有法律政策事宜提供資料。該科亦就司法、法律制度、法律專業、人權、《基本法》,政制發展及選舉事務及中國內地法律等問題，提供意見。負責為法律改革委員會進行各項研究並擔任秘書工作的法律改革委員會秘書處，亦隸屬法律政策科。</p>
+                <p>民事法律科負責向政府提供民事法律意見、草擬商業合約及專營權文件，並代政府進行民事訴訟、仲裁及調停事宜。</p>
+                <p>法律草擬科負責以中英文草擬所有由政府建議的法例，並在立法過程中向決策局提供專業協助。該科亦負責編訂《香港法例》，以及維持一個可透過互聯網查閱的法例資料庫。於2014年10月，法律草擬科正在建立另一個法例資料庫，新資料庫將具有法律地位。</p>
+                <p>刑事檢控科的其中一個重要職能是作出檢控決定，包括是否提出檢控，及若提出檢控的話，決定控罪的內容和選定審訊法庭。科內律師向執法機關就檢控相關事宜提供法律意見，負責出庭檢控，並處理大部分的刑事上訴案件(包括在終審法院提出的上訴)。</p>
+                <p>國際法律科負責向政府提供有關國際公法的法律意見。科內律師也參與與其他司法管轄區洽談協議的工作，並處理外地或香港特區提出的國際司法合作請求。</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Legal Reform Page-->
+          <div data-page="lawreform" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the section "法律改革委員會" (Box 2) to complete this element-->
+                <p>法律改革委員會負責研究由律政司司長或終審法院首席法官提出的課題，並擬備報告書。委員會的成員包括法律學者、執業律師及社會賢達。</p>
+                <p>委員會先後發表的報告書，課題廣泛，包括商業仲裁、資料保護、離婚、售賣貨品和提供服務、無力償債、欺詐行為、法例釋義、持久授權書、一罪兩審、集體訴訟及逆權管有等。多份報告書的全部或部分建議已付諸實行。委員會目前研究的專題計有：性罪行檢討、導致或任由兒童死亡個案、檔案法、公開資料、由第三方資助仲裁及人身傷害個案按期支付未來金錢損失賠款等。</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Legal Profession Page-->
+          <div data-page="legalprofession" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the section "法律專業" of (Box 2) to complete this element-->
+                <p>截至2015年9月，香港有1322名執業大律師、8482名執業律師和854家本地律師行。另有78家外地律師行、1253名註冊外地律師，以及由香港的外地律師行和本地律師行組成的33個註冊聯營團體。</p>
+                <!--Image: images/lawyer.jpg-->
+                <img src="images/lawyer.jpg" alt="律師"><br>
+              </div>
+            </div>
+          </div>
+
+          <!--Link Page-->
+          <div data-page="links" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <!--Refer to the section "有用網頁" (Box 2) to complete this element-->
+                <p>要進一步了解香港的法律制度，瀏覽以下網站：</p>
+                <ol>
+                  <li>司法機構<br>(<a href="http://www.judiciary.gov.hk/tc/index/" class="external">http://www.judiciary.gov.hk/tc/index/</a>)</li>
+                  <li>律政司<br>(<a href="http://www.doj.gov.hk/chi/index.html" class="external">http://www.doj.gov.hk/chi/index.html</a>)</li>
+                  <li>雙語法例資料系統<br>(<a href="http://www.legislation.gov.hk/blis/chi/index.html" class="external">http://www.legislation.gov.hk/blis/chi/index.html</a>)</li>
+                </ol>
+                <!--Image: images/internet.jpg-->
+                <img src="images/internet.jpg" alt="互聯網"><br>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database Page-->
+          <div data-page="database" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title">請在此搜尋雙語法律詞彙</div>
+    
+              <div class="list-block">
+                <ul>
+                  <li class="align-top">
+                    <div class="item-content">
+                      <div class="item-input">
+                        <textarea id="input"></textarea>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50">
+                    <input id="cancel" type="button" value="清除" class="button button-small color-red">
+                  </div>
+                  <div class="col-50">
+                    <input id="go" type="submit" value="搜尋" class="button button-small color-green">
+                  </div>
+                </div>
+              </div>
+              <div id="result" class="result"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var db = [
+        ["English","Chinese"],
+        ["the Court of Final Appeal","終審法院"],
+        ["the High Court","高等法院"],
+        ["the Court of Appeal","上訴法庭"],
+        ["the Court of First Instance","原訟法庭"],
+        ["the District Court","區域法院"],
+        ["the Family Court","家事法庭"],
+        ["the Competition Tribunal","競爭事務審裁處"],
+        ["the Lands Tribunal","土地審裁處"],
+        ["the Magistrates’ Courts","裁判法院"],
+        ["the Juvenile Court","少年法庭"],
+        ["the Coroner’s Court","死因裁判法庭"],
+        ["the Labour Tribunal","勞資審裁處"],
+        ["the Small Claims Tribunal","小額錢債審裁處"],
+        ["the Obscene Articles Tribunal","淫褻物品審裁處"],
+        ["Department of Justice","律政司"],
+        ["Law Reform Commission","法律改革委員會"],
+        ["Legal Aid Department","法律援助署"],
+        ["civil cases","民事訴訟"],
+        ["criminal cases","刑事訴訟"],
+        ["Supplementary Legal Aid Scheme","法律援助輔助計劃"],
+        ["the Duty Lawyer Service","當值律師服務"]
+      ];
+      document.getElementById("go").addEventListener("click", function(){
+        var input = document.getElementById("input").value;
+        document.getElementById("result").innerHTML = fsearchHighlight(input, db);
+      });
+      document.getElementById("cancel").addEventListener("click", function(){
+        document.getElementById("input").value = "";
+        document.getElementById("result").innerHTML = "";
+      });
+    </script>
+  </body>
+</html>
